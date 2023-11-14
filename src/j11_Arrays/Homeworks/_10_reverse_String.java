@@ -1,4 +1,4 @@
-package j11_Arrays.Tasks;
+package j11_Arrays.Homeworks;
 
 public class _10_reverse_String {
 
@@ -10,7 +10,12 @@ public class _10_reverse_String {
         Cevap böyle olmalı :  "dlroW olleH"
         Trick-> String split ile arraya atanmalı
          */
-
-
+        String str = "Hello World";
+        String[] array = str.split("");
+        String reverse = "";
+        for (int i = array.length-1; i >= 0 ; i--) {
+            reverse += array[i];
+        }
+        System.out.println(reverse);
     }
 }

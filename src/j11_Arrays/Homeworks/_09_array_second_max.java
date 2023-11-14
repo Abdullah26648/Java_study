@@ -1,4 +1,4 @@
-package j11_Arrays.Tasks;
+package j11_Arrays.Homeworks;
 
 public class _09_array_second_max {
 
@@ -10,7 +10,15 @@ public class _09_array_second_max {
          */
 
         // Kodu aşağıya yazınız..
-
-
+        Integer[] array = new Integer[]{15,25,22,18,30};
+        Integer max = Integer.MIN_VALUE;
+        Integer secondmax = Integer.MIN_VALUE;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] > max){
+                secondmax = max;
+                max = array[i];
+            }
+        }
+        System.out.println(secondmax);
     }
 }

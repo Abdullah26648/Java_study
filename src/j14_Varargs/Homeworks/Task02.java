@@ -1,4 +1,4 @@
-package j14_Varargs;
+package j14_Varargs.Homeworks;
 
 public class Task02 {
     public static void main(String[] args) {

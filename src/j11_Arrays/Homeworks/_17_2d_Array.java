@@ -1,4 +1,6 @@
-package j11_Arrays.Tasks;
+package j11_Arrays.Homeworks;
+
+import java.util.Arrays;
 
 public class _17_2d_Array {
 
@@ -12,7 +14,17 @@ public class _17_2d_Array {
 
         //Kodu aşağıya yazınız.
 
+        int[][] array = {{2, 3, 2}, {4, 1, 5}, {7, 2, 5}};
 
-
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array[i].length; j++) {
+                if (array[i][j] == 2) {
+                    array[i][j] = 6;
+                }
+            }
+        }
+        for (int i = 0; i < array.length; i++) {
+            System.out.println(Arrays.toString(array[i]));
+        }
     }
 }

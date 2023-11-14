@@ -1,4 +1,4 @@
-package j11_Arrays.Tasks;
+package j11_Arrays.Homeworks;
 
 public class _21_Array_reverse {
 
@@ -13,8 +13,13 @@ public class _21_Array_reverse {
 
         //Kodu aşağıya yazınız.
 
-
+        Integer number = 123;
+        String str = number.toString();
+        String[] array = str.split("");
+        String reverse = "";
+        for (int i = array.length-1; i >=0; i--){
+            reverse += array[i];
+        }
+        System.out.println(reverse);
     }
 }
-
-

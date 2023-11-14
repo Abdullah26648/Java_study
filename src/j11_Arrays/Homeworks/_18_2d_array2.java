@@ -1,4 +1,4 @@
-package j11_Arrays.Tasks;
+package j11_Arrays.Homeworks;
 
 public class _18_2d_array2 {
 
@@ -13,5 +13,13 @@ public class _18_2d_array2 {
 
         //Kodu aşağıya yazınız.
 
+        Integer[][] array = {{5, 2, 1}, {10, 2, 3, 6}, {1, 2}};
+        Integer total = 0;
+        for (int i = 0; i < array.length;i++){
+            for (int j = 0; j < array[i].length;j++){
+                total += array[i][j];
+            }
+        }
+        System.out.println(total);
     }
 }

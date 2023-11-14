@@ -1,4 +1,4 @@
-package j11_Arrays.Tasks;
+package j11_Arrays.Homeworks;
 
 public class _06_Array_contains {
 
@@ -12,7 +12,13 @@ public class _06_Array_contains {
          */
 
         //Kodu aşağıya yazınız..
-
-
+        String[] array = new String[] {"Apple","Orange","Banana","Pineapple"};
+        boolean iscontain = false;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == "Apple"){
+                iscontain = true;
+            }
+        }
+        System.out.println(iscontain);
     }
 }

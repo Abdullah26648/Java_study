@@ -1,4 +1,4 @@
-package j11_Arrays.Tasks;
+package j11_Arrays.Homeworks;
 
 public class _04_Create_Array_String {
 
@@ -12,7 +12,11 @@ public class _04_Create_Array_String {
 
         // Kodu aşağıya yazınız..
 
-
-
+        String[] array = new String[] {"new jersey","new york","boston","California"};
+        Integer counter = 0;
+        for (int i = 0; i < array.length; i++) {
+            counter++;
+        }
+        System.out.println(counter);
     }
 }

@@ -1,4 +1,4 @@
-package j11_Arrays.Tasks;
+package j11_Arrays.Homeworks;
 
 public class _14_String_method_replace {
 
@@ -10,6 +10,9 @@ public class _14_String_method_replace {
         Sonuç bu şekilde olmalıdır:
         HellK WKrld
          */
+        String str = "Hello World";
+        String result = str.replace("o", "K");
 
+        System.out.println(result);
     }
 }

@@ -1,4 +1,4 @@
-package j11_Arrays.Tasks;
+package j11_Arrays.Homeworks;
 
 public class _11_Average_of_Array {
 
@@ -11,5 +11,13 @@ public class _11_Average_of_Array {
 
         //Kodu aşağıya yazınız.
 
+        Integer[] array = new Integer[]{12,14,21,23,10,4};
+        Integer total =  0;
+        int average = 0;
+        for (int i = 0; i < array.length; i++) {
+            total += array[i];
+            average = total / array.length;
+        }
+        System.out.println(average);
     }
 }

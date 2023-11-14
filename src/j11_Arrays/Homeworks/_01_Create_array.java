@@ -10,7 +10,9 @@ public class _01_Create_array {
          */
 
         //Kodu aşağıya yazınız.
-
-
+        String[] array = new String[] {"Apple", "Orange" , "Banana", "Kiwi"};
+        for (int i = 0; i < array.length;i++) {
+            System.out.print(array[i]+" ");
+        }
     }
 }

@@ -1,6 +1,5 @@
-package j11_Arrays.Tasks;
+package j11_Arrays.Homeworks;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class _12_Array_no14 {
@@ -25,6 +24,7 @@ public class _12_Array_no14 {
 
         Scanner scan = new Scanner(System.in);
 
+        System.out.println("Please enter numbers with space between(Ex: 1 2 3 4 5 6 7): ");
         String str1 = scan.nextLine();
 
         String[] arr1 = str1.split(" ");
@@ -45,6 +45,18 @@ public class _12_Array_no14 {
         //Kod buradan başlıyor.. Yukarısını değiştirmeyiniz..
         // intArr ı kullanın.
 
+        boolean containsOne = false;
+        boolean containsFour = false;
 
+        for (int i = 0; i < intArr.length; i++) {
+            if (intArr[i] == 1) {
+                containsOne = true;
+            } else if (intArr[i] == 4) {
+                containsFour = true;
+            }
+        }
+        boolean result = !(containsOne && containsFour);
+
+        System.out.println(result);
     }
 }
