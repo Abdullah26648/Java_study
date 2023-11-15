@@ -1,4 +1,4 @@
-package j11_Arrays.Tasks;
+package j11_Arrays.Homeworks;
 
 public class Task19 {
     public static void main(String[] args) {

@@ -1,6 +1,4 @@
-package j11_Arrays.Tasks;
-
-import java.util.Arrays;
+package j11_Arrays.Homeworks;
 
 public class Task14 {
     public static void main(String[] args) {
@@ -14,12 +12,20 @@ public class Task14 {
                     --> Integer.valueOf()
          */
 
-
-
         String str = "ade1r4d3";
 
+        int sumOfDigits = calculateSumOfDigits(str);
+        System.out.println("Sum of digits in the string: " + sumOfDigits);
     }
+    public static int calculateSumOfDigits(String input) {
+        char[] charArray = input.toCharArray();
+        int sum = 0;
 
-
+        for (char ch : charArray) {
+            if (Character.isDigit(ch)) {
+                sum += Character.getNumericValue(ch);
+            }
+        }
+        return sum;
+    }
 }
-
