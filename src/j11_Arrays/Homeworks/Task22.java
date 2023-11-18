@@ -1,6 +1,5 @@
-package j11_Arrays.Tasks;
+package j11_Arrays.Homeworks;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Task22 {

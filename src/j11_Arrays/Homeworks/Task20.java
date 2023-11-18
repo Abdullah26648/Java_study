@@ -1,7 +1,4 @@
-package j11_Arrays.Tasks;
-
-import java.util.ArrayList;
-import java.util.List;
+package j11_Arrays.Homeworks;
 
 public class Task20 {
     public static void main(String[] args) {
