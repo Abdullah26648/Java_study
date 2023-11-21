@@ -29,4 +29,5 @@ public class Task19 {
         }
         System.out.println(Arrays.deepToString(result));
     }
+
 }

@@ -16,6 +16,26 @@ public class Task22 {
         Scanner scan = new Scanner(System.in);
         System.out.print("agam bir metin gir : ");//hayat java ile cok kolay
 
+        String inputString = scan.nextLine().toLowerCase();
+        int maxCount = 0;
+        char maxChar = ' ';
+
+        for (int i = 0; i < inputString.length(); i++) {
+            char currentChar = inputString.charAt(i);
+            int currentCount = 0;
+
+            for (int j = 0; j < inputString.length(); j++) {
+                if (inputString.charAt(j) == currentChar) {
+                    currentCount++;
+                }
+            }
+
+            if (currentCount > maxCount) {
+                maxCount = currentCount;
+                maxChar = currentChar;
+            }
+        }
+
+        System.out.println("Maximum occurring character is: " + maxChar + " and it occuras "+ maxCount +" times.");
     }
 }
-
