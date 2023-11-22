@@ -1,10 +1,9 @@
-package j12_ArrayList.Tasks;
+package j12_ArrayList.Homeworks;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 
 public class _03_arraylist3 {
-
     /*
         getLength() isminde bir method oluşturun.
         Parametre olarak String ArrayList
@@ -18,9 +17,16 @@ public class _03_arraylist3 {
         Tüm Stringlerin uzunluklarını yazdırın;
         cevap: 10 ,  8 , 4 , 7 , 6 olmalı
      */
-
     public static void main(String[] args) {
-
-
+        ArrayList<String> myList = new ArrayList<>(Arrays.asList("New jersey", "New york", "Ohio", "Florida", "Boston"));
+        ArrayList<Integer> result = getLength(myList);
+        System.out.println("The length of each string in the list is: " + result);
+    }
+    private static ArrayList<Integer> getLength(ArrayList<String> myList) {
+        ArrayList<Integer> lengths = new ArrayList<>();
+        for (String str : myList) {
+            lengths.add(str.length());
+        }
+        return lengths;
     }
 }

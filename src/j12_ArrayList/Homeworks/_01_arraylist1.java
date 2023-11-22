@@ -1,4 +1,4 @@
-package j12_ArrayList.Tasks;
+package j12_ArrayList.Homeworks;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -19,7 +19,19 @@ public class _01_arraylist1 {
          */
 
     public static void main(String[] args) {
+        ArrayList<String> fruitList = new ArrayList<>(Arrays.asList("Orange", "Kiwi", "Peach", "Banana", "Orange"));
+        String fruit = "Orange";
+        int count = getCount(fruitList, fruit);
+        System.out.println("Count of " + fruit + ": " + count);
+    }
 
-
+    private static int getCount(ArrayList<String> fruitList, String targetFruit) {
+        int counter = 0;
+        for (String fruit : fruitList) {
+            if (fruit.equals(targetFruit)) {
+                counter++;
+            }
+        }
+        return counter;
     }
 }
