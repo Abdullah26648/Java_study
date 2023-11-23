@@ -1,7 +1,4 @@
-package j12_ArrayList.Tasks;
-
-import java.util.ArrayList;
-import java.util.Arrays;
+package j12_ArrayList.Homeworks;
 
 public class _05_arraylist5 {
 
