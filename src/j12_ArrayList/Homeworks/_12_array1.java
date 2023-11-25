@@ -1,7 +1,6 @@
-package j12_ArrayList.Tasks;
+package j12_ArrayList.Homeworks;
 
 public class _12_array1 {
-
     /*
     dupicate() isminde bir method oluşturun.
     Parametresi int Array olmalı
@@ -16,10 +15,8 @@ public class _12_array1 {
     Örnek 2:
     Input: [1,2,3,4]
     Output: false
-         */
-
+    */
     public static void main(String[] args) {
-
 
     }
 }

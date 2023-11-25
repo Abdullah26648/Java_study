@@ -1,10 +1,9 @@
-package j12_ArrayList.Tasks;
+package j12_ArrayList.Homeworks;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 
 public class _06_arraylist6 {
-
     /*
     hillNum() isminde bir method oluşturun.
     Parametre olarak Integer ArrayList
@@ -15,9 +14,22 @@ public class _06_arraylist6 {
     2, 6'dan küçük ve 1 den büyüktür.
     Return 2 olmalı.
      */
-
     public static void main(String[] args) {
+        ArrayList<Integer> arrayList = new ArrayList<>(Arrays.asList(5,4,6,2,1));
+        System.out.println(hillNum(arrayList));
+    }
+    private static int hillNum(ArrayList<Integer> arrayList) {
+        int hillNum = 0;
+        for (int i = 1; i < arrayList.size() - 1; i++) {
+            int currentNum = arrayList.get(i);
+            int prevNum = arrayList.get(i - 1);
+            int nextNum = arrayList.get(i + 1);
 
-
+            if (currentNum < prevNum && currentNum > nextNum) {
+                hillNum = currentNum;
+                break;
+            }
+        }
+        return hillNum;
     }
 }
