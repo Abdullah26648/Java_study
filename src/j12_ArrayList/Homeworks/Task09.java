@@ -1,7 +1,4 @@
-package j12_ArrayList.Tasks;
-
-import java.util.ArrayList;
-import java.util.Scanner;
+package j12_ArrayList.Homeworks;
 
 public class Task09 {
     public static void main(String[] args) {

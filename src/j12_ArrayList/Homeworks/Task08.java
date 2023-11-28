@@ -1,36 +1,43 @@
-package j12_ArrayList.Tasks;
+package j12_ArrayList.Homeworks;
 
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 public class Task08 {
+    static Scanner scanner = new Scanner(System.in);
+
     public static void main(String[] args) {
         // Task-> Girilen sayıların içinde ortalamadan buyuk olanları print eden METHOD create ediniz.
-        List<String> list = new ArrayList<>();
-        Scanner scan = new Scanner(System.in);
-        System.out.println("liste atamak için sayi giriniz \nyeterli sayiya ulastiginizda 'q' giriniz");
-        int toplam = 0;
-        String islem = "";
-        while (!islem.equalsIgnoreCase("q")) {
-            System.out.println("sayi giriniz : ");
-            islem = scan.next();
-            list.add(islem);
+        ArrayList<Double> list = new ArrayList<>();
+        System.out.println("Program will store numbers until input 0 !!!");
+        while (true) {
+            System.out.print("Please enter the number: ");
+            double score = scanner.nextDouble();
+            if (score != 0) {
+                list.add(score);
+            } else {
+                break;
+            }
         }
-
-        list.remove(list.size() - 1);//icinde q bulunmayan sadece sayi bulun list haline geldi
-        for (String w : list) {
-            int a = Integer.parseInt(w);
-            toplam += a;
-
-        }
-        for(String w : list) {
-            double ortalama=toplam/ list.size();
-            if (Integer.parseInt(w)>ortalama) System.out.print(w+" ");
-        }
-
-
+        System.out.println("Average: " + calculateaverage(list));
+        aboveaverage(list);
     }
 
+    private static double calculateaverage(ArrayList<Double> list) {
+        double total = 0;
+        for (double i : list) {
+            total += i;
+        }
+        return total / list.size();
+    }
 
+    private static void aboveaverage(ArrayList<Double> list) {
+        ArrayList<Double> AboveAverage = new ArrayList<>();
+        for (int i = 0; i < list.size(); i++) {
+            if (calculateaverage(list) < list.get(i)) {
+                AboveAverage.add(list.get(i));
+            }
+        }
+        System.out.println("Above average numbers: " + AboveAverage);
+    }
 }

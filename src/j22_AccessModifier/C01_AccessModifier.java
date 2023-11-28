@@ -45,4 +45,7 @@ public class C01_AccessModifier {//Class level
     protected static void protectedMethod() {
         System.out.println("Agam'a protected METH. selamkeee :)");
     }
+
+    public static void defaultMethod() {
+    }
 }//Class sonu
