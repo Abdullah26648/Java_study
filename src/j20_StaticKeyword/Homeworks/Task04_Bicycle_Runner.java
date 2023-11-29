@@ -2,7 +2,7 @@ package j20_StaticKeyword.Homeworks;
 
 import java.util.Scanner;
 
-public class Task04_Bisiklet_Runner {
+public class Task04_Bicycle_Runner {
     /*
     Task 04->
     Bisiklet Class :Properties(fields) : hiz, vites
@@ -15,7 +15,7 @@ public class Task04_Bisiklet_Runner {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        Bisiklet bisiklet = new Bisiklet();
+        Bicycle bicycle = new Bicycle();
 
         int choice;
         do {
@@ -33,16 +33,16 @@ public class Task04_Bisiklet_Runner {
                 case 1:
                     System.out.print("Enter new speed: ");
                     int newSpeed = scanner.nextInt();
-                    bisiklet.hizDegistir(newSpeed);
+                    bicycle.hizDegistir(newSpeed);
                     break;
                 case 2:
-                    bisiklet.vitesArtir();
+                    bicycle.vitesArtir();
                     break;
                 case 3:
-                    bisiklet.vitesAzalt();
+                    bicycle.vitesAzalt();
                     break;
                 case 4:
-                    bisiklet.durumGoster();
+                    bicycle.durumGoster();
                     break;
                 case 0:
                     System.out.println("Exiting Bicycle Menu. Goodbye!");

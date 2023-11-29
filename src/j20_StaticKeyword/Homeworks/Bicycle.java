@@ -1,6 +1,6 @@
 package j20_StaticKeyword.Homeworks;
 
-class Bisiklet {
+class Bicycle {
     private int hiz;
     private int vites;
 

@@ -1,6 +1,6 @@
 package j20_StaticKeyword.Homeworks;
 
-public class Task02_ElektrikHesap_Musteri_Runner {/*
+public class Task02_ElectricityAccount_Customer_Runner {/*
     Task 02 ->
     ElektirikHesap Class:  fields : toplamTuketim(int), oran(double), fatura(double)
     Müşteriye ait tüketilen enerjiyi toplamTuketim'e toplayan tüketimEkle method

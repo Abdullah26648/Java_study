@@ -1,4 +1,4 @@
-package j18_StringBuilder;
+package j18_StringBuilder.OCA_questions;
 
 public class C3_SB_Soru02 {
 
