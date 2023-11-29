@@ -12,24 +12,20 @@ public class Task03_Student_Lesson_Runner {
      */
 
     public static void main(String[] args) {
-        // Create lessons
+
         Lesson mathLesson = new Lesson("Math", 5);
         Lesson historyLesson = new Lesson("History", 3);
         Lesson biologyLesson = new Lesson("Biology", 7);
 
-        // Create a student with a maximum credit of 10
         Student student = new Student("John Doe", 10);
 
-        // Add lessons to the student's list
         student.addLesson(mathLesson);
         student.addLesson(historyLesson);
         student.addLesson(biologyLesson);
 
-        // Print courses the student can take
         System.out.println("Courses the student can take:");
         student.printAvailableCourses();
 
-        // Print courses the student cannot take
         System.out.println("\nCourses the student cannot take:");
         student.printUnavailableCourses();
     }

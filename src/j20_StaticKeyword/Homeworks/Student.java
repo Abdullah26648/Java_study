@@ -36,7 +36,7 @@ class Student {
 
     public void printUnavailableCourses() {
         for (Lesson lesson : lessons) {
-            if (getTotalCredits() + lesson.getCredit() > maxCredit) {
+            if (lesson.getCredit() > (maxCredit - getTotalCredits())) {
                 System.out.println("Course: " + lesson.getName() + ", Credits: " + lesson.getCredit());
             }
         }
