@@ -23,5 +23,27 @@ public class Runner {
         System.out.println("k3.m = " + k3.m);
         //System.out.println("k3.c = " + k3.c);
         //System.out.println("k3.d = " + k3.d);
+
+        /*
+        Ahan da trick köşesinde böğün:inherit edilmiş herhangi bir obj varaible  Data type göre call edilir
+        Variable araştırmaya data type Class'dan başlanıp parentlere gidilir
+        */
+
+        System.out.println("   ***   ");
+
+        k1.mA();
+        k1.mC();
+        k1.mM();
+
+        System.out.println("   ***   ");
+
+        k2.mA();
+        k2.mC();
+        k2.mM();
+
+        System.out.println("   ***   ");
+
+        k3.mA();
+        k3.mM();
     }
 }
