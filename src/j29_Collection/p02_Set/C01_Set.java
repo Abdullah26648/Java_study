@@ -1,5 +1,9 @@
 package j29_Collection.p02_Set;
 
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
+
 public class C01_Set {
     public static void main(String[] args) {
         /*
@@ -36,6 +40,56 @@ public class C01_Set {
             .isEmpty();-->Sette hic eleman yoksa true, varsa false return eder
             .size();-->set’in eleman sayisini verir
      */
+        HashSet<String> hs1 = new HashSet<>();//bos hashSet tanımlandı->decleration
+        HashSet<String> hs2 = new HashSet<>(Arrays.asList("javaCAN", "javaSU", "javaHAN", "javaNAZ", "javaZADE", "javvaNUR", "javiDAN", "javFER"));
 
+        // set print ->
+        System.out.println("hs2 = " + hs2);//[javvaNUR, javaNAZ, javaHAN, javaCAN, javaSU, javFER, javiDAN, javaZADE]
+        // set add()-> eleman ekleme
+        hs2.add("javiYE");
+        System.out.println("hs2 add sonrası = " + hs2);//[javvaNUR, javaNAZ, javaHAN, javaCAN, javiYE, javaSU, javFER, javiDAN, javaZADE]
+        // set'e tekrarlı eleman ekleme
+        hs2.add("javaNAZ");
+        System.out.println("hs2 tekrarlı ekleme sonrası = " + hs2);//[javvaNUR, javaNAZ, javaHAN, javaCAN, javiYE, javaSU, javFER, javiDAN, javaZADE]
+        hs2.add(null);
+        hs2.add(null);
+        hs2.add(null);
+        hs2.add(null);
+        hs2.add(null);
+        hs2.add(null);
+        System.out.println("hs2 null ekleme sonrası = " + hs2);//[javvaNUR, javaNAZ, javaHAN, javaCAN, javiYE, javaSU, javFER, javiDAN, javaZADE]
+        HashSet<String> hs3 = new HashSet(Arrays.asList("balcanKebap", "Cüger", "haşhaşKebap", "guzuGerdan", "incik", "küşşşleme"));
+        hs2.addAll(hs3);
+        System.out.println("hs2 hs3 sonrası = " + hs2);//
+        //set remove()->eleman silme
+        hs2.remove(null);
+        System.out.println("hs2 null remove sonrası " + hs2);//
+        hs2.removeAll(hs3);
+
+        System.out.println("hs2 hs3 remove sonrası= " + hs2);
+        System.out.println("hs2.size() = " + hs2.size());// 9
+        System.out.println("hs2.isEmpty() = " + hs2.isEmpty());//false
+        System.out.println("hs1.isEmpty() = " + hs1.isEmpty());//true
+        hs2.clear();
+        System.out.println("hs2.size() = " + hs2.size());//0
+        System.out.println("hs2.isEmpty() = " + hs2.isEmpty());// true
+
+        //set contains()->eleman varlıgı control
+        System.out.println("hs3.contains(\"Cüger\") = " + hs3.contains("Cüger"));//true
+        System.out.println("hs3.contains(\"ciger\") = " + hs3.contains("ciger"));//false
+        System.out.println("hs3.hashCode() = " + hs3.hashCode());// 1961978443
+        System.out.println("hs2.hashCode() = " + hs2.hashCode());//0
+
+        // set retainAll()->kesişen ortak eleman
+
+        HashSet<Integer> hs5 = new HashSet<Integer>(Arrays.asList(16, 54, 67, 63, 47, 20));
+        HashSet<Integer> hs6 = new HashSet<Integer>(Arrays.asList(6, 54, 61, 63, 17, 20));
+        System.out.println("hs5.retainAll(hs6) = " + hs5.retainAll(hs6));//
+
+        Set<Integer> ortakEleman = new HashSet<>(hs6);// [17, 20, 6, 54, 61, 63]
+        System.out.println("ortakEleman = " + ortakEleman);//
+        System.out.println("ortakEleman.retainAll(hs5) = " + ortakEleman.retainAll(hs5));//
+
+        System.out.println("hs5.equals(hs6) = " + hs5.equals(hs6));//false
     }
 }
