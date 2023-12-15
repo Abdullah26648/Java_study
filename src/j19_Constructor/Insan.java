@@ -14,12 +14,14 @@ public class Insan {//Class level
 
     }
 
+
     public Insan(String name, int age, String babaAdi, char cins) {//full parametirized telescopic const
         this.isim = name;
         this.yas = age;
         this.babaAdi = babaAdi;
         this.cinsiyet = cins;
     }
+
 
     public Insan(String isim, String babaAdi) {// 2 p'li const
         this.isim = isim;
@@ -40,6 +42,9 @@ public class Insan {//Class level
         System.out.println(insn2.isim + " " + insn2.babaAdi + " " + insn2.yas + " " + insn2.cinsiyet);//
         System.out.println(insn1.isim + " " + insn2.babaAdi + " " + insn3.yas + " " + insn4.cinsiyet);//
         System.out.println("insn2 = " + insn2);//j19_Constructor.Insan@1936f0f5->ref
+
+
     }//main sonu
+
 
 }//Class sonu
