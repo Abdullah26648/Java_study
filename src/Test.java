@@ -10,5 +10,6 @@ public class Test {
             }
             continue;
         }
+        System.out.println("Hello world");
     }
 }
