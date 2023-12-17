@@ -11,8 +11,8 @@ public class Islemler {
     public static final String B = "\u001B[34m";
     static Scanner scan = new Scanner(System.in);
     static int id = 1000;
-    static HashMap<Integer, Urunler> urunler = new HashMap<>();//urunleri depolanacagı bos map
-// {1001,"un ankara cuval 100 2a"}--> map element
+    static HashMap<Integer, Urunler> urunler = new HashMap<>(); // urunleri depolanacagı bos map, {1001,"un ankara cuval 100 2a"}--> map element
+
     public static void girisPanel() {
         System.out.println(R + "========================== İŞLEMLER =======================\r\n"
                 + "   ____________________             ____________________    \n"
