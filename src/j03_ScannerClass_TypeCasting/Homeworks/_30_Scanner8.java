@@ -17,7 +17,5 @@ public class _30_Scanner8 {
         System.out.println(kg);
 
 
-
-
     }
 }

@@ -92,7 +92,6 @@ public class ATMProject {
 		if(musteriBilgileri.get(musteriNo) == null) {
 			System.out.println("Böyle bir müşteri yok.");
 			girisEkrani();
-			return;
 		}else {
 			System.out.println("Müşteri numaranız : " + musteriNo);
 			System.out.println("Lütfen şifrenizi giriniz : ");
@@ -107,7 +106,6 @@ public class ATMProject {
 			}else {
 				System.out.println("ŞİFRENİZ YANLIŞ.");
 				girisEkrani();
-				return;
 			}
 		}
 	}
