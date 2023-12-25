@@ -30,5 +30,4 @@ public class Task10 {
         }
         return heşMep;
     }
-
 }

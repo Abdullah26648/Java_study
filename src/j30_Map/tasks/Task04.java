@@ -26,7 +26,4 @@ public class Task04 {
         System.out.println("harfFrekans = " + harfFrekans);
 
     }
-
-
 }
-

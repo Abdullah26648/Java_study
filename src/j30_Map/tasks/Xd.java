@@ -130,7 +130,5 @@ public class Xd {
 				break;
 				}
 			}while(true);
-		
 	}
-	
 }
