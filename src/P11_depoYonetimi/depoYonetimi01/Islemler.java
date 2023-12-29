@@ -106,6 +106,4 @@ public class Islemler {
         id++;
         girisPanel();
     }
-
-
 }

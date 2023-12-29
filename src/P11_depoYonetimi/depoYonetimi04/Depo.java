@@ -59,4 +59,3 @@ public class Depo implements UrunSatis, UrunAlis, UrunTanimlama {
 
     }
 }
-

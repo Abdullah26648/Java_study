@@ -9,6 +9,4 @@ public interface Planning {
     ArrayList<Product> pList();
     void pShelving(int id, String shelf);//bu methoa-d su aksi
 
-
-
 }

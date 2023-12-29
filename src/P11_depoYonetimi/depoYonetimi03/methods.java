@@ -306,5 +306,4 @@ public class methods {
         System.out.println("CIKIYORSUN BAK SUAN");
         System.exit(0);
     }
-
     }
